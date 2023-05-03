@@ -4,7 +4,7 @@ public class IvrParser {
     public static final String SOUND_FORMAT = ".wav";
 
     public static void main(String[] args) {
-        int number = 2250;
+        int number = 2140;
         IvrParser parser = new IvrParser();
         System.out.println(parser.getSounds(number));
     }
@@ -30,7 +30,7 @@ public class IvrParser {
         }
 
         int tens = (number / 10) % 10 *10;
-        if (number >= 100 && tens != 0) {
+        if (number >= 10 && tens != 0) {
             addHundredsOrTens(sounds, tens);
         }
 
